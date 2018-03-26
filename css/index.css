@@ -1,0 +1,253 @@
+
+/* part: banner */
+.banner{
+    width: 100%;
+    height: 570px;
+    overflow: hidden;
+    position: relative;
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+}
+.banner-gray-cover{
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter:Alpha(opacity=60);
+}
+.banner-info{
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    padding-top: 210px; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+.banner-detail{
+    margin: 12px;
+    font-size: 16px;
+}
+.banner-detail span{
+    margin: 0 27px;
+}
+
+/* part: menu */
+.menu{
+    border-top: 4px solid #f34949;
+    position: relative;
+    overflow: hidden;
+}
+.menu>h2{
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    z-index: 10;
+    width: 155px;
+    height: 50px;
+    margin-left: -77px;
+    padding-top: 25px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #f34949;
+}
+.menu>h2:after{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 20;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid #fff;
+    border-left: 77px dashed transparent;
+    border-right: 78px dashed transparent;
+}
+.menu .dishes-wrap{
+    overflow: hidden;
+}
+.menu .dishes{
+    width: 1216px;
+    margin-top: 153px;
+    overflow: hidden;
+}
+.menu .dish-item{
+    position: relative;
+    float: left;
+    height: 95px;
+    width: 492px;
+    margin-right: 116px;
+}
+.menu .dish-item a{
+    font-size: 16px;
+    color: #555;    
+}
+
+.menu .dish-content{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #b7b7b7;
+}
+.menu .dish-price{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.menu .dish-price .line{
+    display: inline-block;
+    width: 192px;
+    height: 1px;
+    margin-right: 42px;
+    background-color: #e3e1e1;
+    vertical-align: middle;
+}
+
+.menu .more-dish-btn{
+    display: block;
+    width: 133px;
+    height: 32px;
+    margin: 29px auto 0 auto;
+    border: 1px solid #d7d5d5;
+    line-height: 32px;
+    color: #b7b7b7;
+    background-color: #fff;
+    outline: none;
+}
+
+.menu .more-dish-btn .down-arrow{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    vertical-align: middle;
+    background-image: url("../img/icons.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* part: featured */
+.featured{
+    position: relative;
+    height: 362px;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.featured h2{
+    height: 94px;
+    font-size: 20px;
+    color: #3b3b3b;
+    overflow: hidden;
+}
+.featured h2 .line{
+    width: 200px;
+    margin-left: 19px;
+}
+.featured .control-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0;
+}
+.featured .control-box{
+    display: inline-block;;
+    width: 9px;
+    height: 9px;
+    margin-left: 11px;
+    border-radius: 50%;    
+    background-color: #dedede;
+} 
+.featured .control-box.active{
+    background-color: #9b9b9b;
+}
+.featured .dishes-wrap{
+    overflow: hidden;
+}
+.featured .dishes{
+    width: 1160px;
+}
+.featured .dishes li{
+    float: left;
+    height: 268px;
+    width: 231px;
+    margin-right: 59px;
+}
+.featured .dishes li img{
+    display: block;
+}
+.featured .dish-info{
+    margin-top: 29px;
+    height: 24px;;
+    font-size: 16px;
+    color: #555;
+}
+.featured .dish-price{
+    float: right;
+}
+.featured .dishes .star-bar{
+    height: 13px;
+    font-size: 0px;
+}
+.featured .dishes .star{
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    margin-right: 5px;
+    background-image: url("../img/icons.png");
+    background-position: 0px -20px;
+    background-repeat: no-repeat;
+}
+.featured .dishes .star-disabled{
+    background-position: 0px -40px;
+}
+
+/* part: gallery */
+.gallery{
+    margin: 200px auto;
+    height: 530px;
+}
+.gallery h2{
+    height: 148px;
+}
+.gallery h2 .line{
+    width: 200px;
+    margin-left: 19px;
+}
+.gallery>div{
+    float: left;
+    height: 382px;
+}
+.gallery img{
+    width: 100%;
+}
+.gallery-left{
+    width: 353px;
+}
+.gallery-mid{
+    width: 287px;
+    position: relative;
+}
+.gallery-mid img{
+    position: absolute;
+}
+.gallery-mid .cover-top{
+    top: 0;
+    z-index: 15;
+}
+.gallery-mid .cover-bottom{
+    bottom: 0;
+    z-index: 10;
+}
+.gallery-right{
+    width: 460px;
+}
+
